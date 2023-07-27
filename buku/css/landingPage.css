@@ -1,0 +1,57 @@
+.containerLocal {
+  display: grid;
+  grid-template-areas: "sidebar mainbar";
+  grid-template-columns: 1fr 3fr;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: green;
+}
+.mainbar {
+  grid-area: mainbar;
+  background-color: red;
+}
+.turun {
+  margin-top: 3.6em;
+}
+.header {
+  display: grid;
+  grid-template-areas: "hero";
+}
+.hero {
+  display: flex;
+  grid-area: hero;
+  min-height: 350px;
+  background-image: url(https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg?w=740&t=st=1690430473~exp=1690431073~hmac=611de3437c43cecebc742c2301eea388b2206f9d02e3beace8afc6c4f79821c5);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+}
+.fontheader {
+  font-size: 10vh;
+  margin-left: 0.7em;
+}
+
+/* resposive breakpoint */
+@media (max-width: 767px) {
+  .containerLocal {
+    display: grid;
+    grid-template-areas: "sidebar" "mainbar";
+    grid-template-columns: 100%;
+  }
+  .sidebar {
+    grid-area: sidebar;
+    background-color: green;
+  }
+  .mainbar {
+    grid-area: mainbar;
+    background-color: red;
+  }
+  .hero {
+    max-height: 150px;
+  }
+  .fontheader {
+    font-size: 3vh;
+    margin-left: 0.3em;
+  }
+}

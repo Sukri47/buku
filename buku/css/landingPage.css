@@ -82,6 +82,10 @@ details p {
     font-size: 5vh;
     margin-left: 0.3em;
   }
+  .imgwidth {
+    margin-bottom: 0.6em;
+    width: 10em;
+  }
 }
 @media (max-width: 767px) {
   .containerLocal {

@@ -91,10 +91,14 @@ details p {
   }
   .sidebar {
     grid-area: sidebar;
-    padding-bottom: 2em;
+    padding-bottom: 0.8em;
     border-bottom: 1px solid rgb(202, 202, 202);
     border-right: none;
-    display: none;
+  }
+  .dflex {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
   }
   .first-mainbar {
     flex-wrap: wrap;

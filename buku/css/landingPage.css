@@ -1,37 +1,88 @@
-.containerLocal {
-  display: grid;
-  grid-template-areas: "sidebar mainbar";
-  grid-template-columns: 1fr 3fr;
+* {
+  margin: 0;
+  padding: 0;
 }
-.sidebar {
-  grid-area: sidebar;
+.fontoswald {
+  font-family: "Oswald", sans-serif;
 }
-.mainbar {
-  grid-area: mainbar;
-  background-color: red;
+.fontrubik {
+  font-family: "Rubik", sans-serif;
 }
-.turun {
-  margin-top: 3.6em;
-}
+
+/* header */
 .header {
   display: grid;
   grid-template-areas: "hero";
 }
 .hero {
   display: flex;
+  flex-wrap: wrap;
   grid-area: hero;
   min-height: 350px;
   background-image: url(https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg?w=740&t=st=1690430473~exp=1690431073~hmac=611de3437c43cecebc742c2301eea388b2206f9d02e3beace8afc6c4f79821c5);
   background-size: cover;
   background-position: center;
   align-items: center;
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
+span {
+  color: rgb(236, 236, 118);
+}
+
 .fontheader {
   font-size: 10vh;
   margin-left: 0.7em;
 }
+.imgwidth {
+  width: 20em;
+}
+
+/* content */
+.containerLocal {
+  display: grid;
+  grid-template-areas: "sidebar mainbar";
+  grid-template-columns: 1fr 4fr;
+}
+
+/* sidebar */
+.sidebar {
+  grid-area: sidebar;
+  border-right: 1px solid rgb(202, 202, 202);
+}
+/* details {
+  margin-left: 1em;
+}
+details p {
+  margin-bottom: 0;
+  margin-left: 1.6em;
+  color: #585858;
+  text-decoration: underline;
+  font-size: 1vw;
+} */
+
+/* mainbar */
+.mainbar {
+  margin: 0em 1em;
+  grid-area: mainbar;
+}
+.first-mainbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1em;
+}
+.turun {
+  margin-top: 3.6em;
+}
 
 /* resposive breakpoint */
+@media (max-width: 992px) {
+  .fontheader {
+    font-size: 5vh;
+    margin-left: 0.3em;
+  }
+}
 @media (max-width: 767px) {
   .containerLocal {
     display: grid;
@@ -40,80 +91,32 @@
   }
   .sidebar {
     grid-area: sidebar;
+    padding-bottom: 2em;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    border-right: none;
+    display: none;
+  }
+  .first-mainbar {
+    flex-wrap: wrap;
   }
   .mainbar {
     grid-area: mainbar;
   }
-  .containerLocal {
-    display: grid;
-    grid-template-areas: "sidebar mainbar";
-    grid-template-columns: 1fr 3fr;
-  }
-  .sidebar {
-    grid-area: sidebar;
-    border-right: 1px solid rgb(202, 202, 202);
-  }
-  .mainbar {
-    grid-area: mainbar;
-  }
-  .mainbar h4,
-  .sidebar h4 {
-    text-decoration: underline;
-  }
-  .turun {
-    margin-top: 3.6em;
-  }
-  .header {
-    display: grid;
-    grid-template-areas: "hero";
-  }
-  .hero {
-    display: flex;
-    grid-area: hero;
-    min-height: 350px;
-    background-image: url(https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg?w=740&t=st=1690430473~exp=1690431073~hmac=611de3437c43cecebc742c2301eea388b2206f9d02e3beace8afc6c4f79821c5);
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-  }
-  .fontheader {
-    font-size: 10vh;
-    margin-left: 0.7em;
-  }
-  .imgwidth {
-    width: 20em;
-  }
-
-  /* resposive breakpoint */
-  @media (max-width: 767px) {
-    .containerLocal {
-      display: grid;
-      grid-template-areas: "sidebar" "mainbar";
-      grid-template-columns: 100%;
-    }
-    .sidebar {
-      grid-area: sidebar;
-      padding-bottom: 2em;
-      border-bottom: 1px solid rgb(202, 202, 202);
-      border-right: none;
-    }
-    .mainbar {
-      grid-area: mainbar;
-    }
-    .hero {
-      max-height: 150px;
-    }
-    .fontheader {
-      font-size: 3vh;
-      margin-left: 0.3em;
-    }
-  }
-
   .hero {
     max-height: 150px;
   }
   .fontheader {
     font-size: 3vh;
     margin-left: 0.3em;
+  }
+  .img-content {
+    order: 1;
+  }
+  .text-content {
+    order: 2;
+  }
+  .imgwidth {
+    margin-bottom: 0.6em;
+    width: 15em;
   }
 }

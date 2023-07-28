@@ -2,25 +2,17 @@
   margin: 0;
   padding: 0;
 }
-/* Kelas Font */
-.fontoswald {
-  font-family: "Oswald", sans-serif;
-}
-.fontrubik {
-  font-family: "Rubik", sans-serif;
-}
-.font-tilt-wrap {
-  font-family: "Tilt Warp", cursive;
-}
-.font-josesif-sans {
-  font-family: "Josefin Sans", sans-serif;
-}
-.font-lexand {
-  font-family: "Lexend Deca", sans-serif;
-}
-
 .bg-success {
   background-color: rgb(175, 144, 5) !important;
+}
+.turun {
+  margin-top: 3.6em;
+}
+
+/* brand */
+.brand-text {
+  letter-spacing: 0.1em;
+  color: rgb(243, 234, 196);
 }
 /* header */
 .header {
@@ -68,7 +60,7 @@ span {
 .sidebar > h2,
 .mainbar > h2 {
   text-transform: uppercase;
-  font-size: 3vw;
+  font-size: 3em;
 }
 .list-group li {
   font-size: 0.8rem;
@@ -107,7 +99,6 @@ details p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 1em;
 }
 .second-mainbar {
   display: flex;
@@ -120,9 +111,6 @@ details p {
 }
 .text-content {
   padding: 2em;
-}
-.turun {
-  margin-top: 3.6em;
 }
 
 /* footer */

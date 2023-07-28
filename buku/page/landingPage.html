@@ -3,39 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Perpustakaan Buku</title>
+    <title>SUKRIBOOK - Perpustakaan Buku</title>
     <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/201/201614.png?w=740&t=st=1690524988~exp=1690525588~hmac=aeb754baa84f0ba37dbb21c606b188976b50ec929750afdc8214d52600411c16" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Lexend+Deca:wght@300&family=Oswald:wght@500&family=Rubik:wght@500&family=Tilt+Warp&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Josefin+Sans:wght@700&family=Lexend+Deca:wght@300&family=Oswald:wght@500&family=Rubik:wght@500&family=Tilt+Warp&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="../css/landingPage.css" />
+    <link rel="stylesheet" href="../css/font.css" />
   </head>
   <body>
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-success shadow fixed-top" data-bs-theme="dark">
       <div class="container">
-        <a class="navbar-brand fs-3 fw-bold" href="#">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/201/201614.png?w=740&t=st=1690524988~exp=1690525588~hmac=aeb754baa84f0ba37dbb21c606b188976b50ec929750afdc8214d52600411c16"
-            alt="Logo"
-            width="40"
-            class="d-inline-block align-text-top me-2"
-          />
-          SUKRIBOOK
-        </a>
+        <a class="navbar-brand fs-3 fw-bold font-bagel brand-text" href="#"> SUKRIBOOK </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active btn btn-danger fw-semibold me-1" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu-2</a>
+              <a class="nav-link active fw-semibold me-1" href="menubuku.html">Book</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu-3</a>
+              <a class="nav-link active fw-semibold" href="#">Account</a>
             </li>
           </ul>
         </div>
@@ -86,16 +80,12 @@
               <div class="accordion-body">
                 <ul class="list-group">
                   <li class="list-group-item d-flex justify-content-between align-items-center">
-                    A list item
-                    <span class="badge bg-primary rounded-pill">14</span>
+                    Tambah Buku Fisik
+                    <span class="badge bg-primary rounded-pill">+</span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center">
-                    A second list item
-                    <span class="badge bg-primary rounded-pill">2</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    A third list item
-                    <span class="badge bg-primary rounded-pill">1</span>
+                    Tambah E-Book
+                    <span class="badge bg-primary rounded-pill">+</span>
                   </li>
                 </ul>
               </div>
@@ -109,15 +99,15 @@
               <div class="accordion-body">
                 <ul class="list-group">
                   <li class="list-group-item d-flex justify-content-between align-items-center">
-                    A list item
+                    Fiksi
                     <span class="badge bg-primary rounded-pill">14</span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center">
-                    A second list item
+                    Non-Fiksi
                     <span class="badge bg-primary rounded-pill">2</span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center">
-                    A third list item
+                    Fantasy
                     <span class="badge bg-primary rounded-pill">1</span>
                   </li>
                 </ul>
@@ -128,7 +118,7 @@
       </div>
       <div class="mainbar">
         <h2 class="text-center m-0 p-3 font-tilt-wrap">introduction</h2>
-        <div class="first-mainbar mb-5">
+        <div class="first-mainbar">
           <div class="align-self-center text-content">
             <h3 class="font-josesif-sans fs-2">Mengapa Baca Buku Perlu?</h3>
             <p class="font-lexand">

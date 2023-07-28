@@ -70,6 +70,17 @@ span {
   text-transform: uppercase;
   font-size: 3vw;
 }
+.list-group li {
+  font-size: 0.8rem;
+}
+.list-group li a {
+  text-decoration: none;
+  color: black;
+}
+.list-group li a:hover {
+  text-decoration: underline;
+  color: black;
+}
 .accordion-item {
   border-top: 0 !important;
   border-left: 0 !important;
@@ -98,7 +109,18 @@ details p {
   justify-content: center;
   margin: 1em;
 }
-
+.second-mainbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1em;
+}
+.second-mainbar .text-content {
+  order: 2;
+}
+.text-content {
+  padding: 2em;
+}
 .turun {
   margin-top: 3.6em;
 }
@@ -126,9 +148,10 @@ h5 {
 .footer-right {
   grid-area: f-right;
 }
-.footer-right > button {
-  padding: 0.5em 2em;
+.footer-right > a {
+  padding: 0.5em 2.2em 0.5em 2em;
   font-weight: bold;
+  margin-right: 1rem;
 }
 .footer-left > .icon {
   display: flex;
@@ -136,6 +159,12 @@ h5 {
 .icon img {
   margin-right: 1em;
   width: 1rem;
+}
+.btn-danger img,
+.btn-success img {
+  width: 1.3rem;
+  margin-bottom: 0.2rem;
+  margin-right: 1rem;
 }
 /* resposive breakpoint */
 @media (max-width: 992px) {
@@ -165,7 +194,8 @@ h5 {
     display: flex;
     justify-content: center;
   }
-  .first-mainbar {
+  .first-mainbar,
+  .second-mainbar {
     flex-wrap: wrap;
   }
   .mainbar {
